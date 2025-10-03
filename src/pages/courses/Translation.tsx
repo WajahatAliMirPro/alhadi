@@ -12,6 +12,7 @@ const Translation = () => {
       <WhatsAppFloat />
 
       <main className="flex-grow">
+        {/* Hero Section */}
         <section className="relative h-[400px] overflow-hidden">
           <img src={courseTranslation} alt="Quran Translation Course" className="w-full h-full object-cover" />
           <div className="absolute inset-0 gradient-hero flex items-center justify-center">
@@ -19,6 +20,7 @@ const Translation = () => {
           </div>
         </section>
 
+        {/* Content */}
         <section className="container-custom py-16">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading font-bold text-4xl mb-6 text-primary">
@@ -65,6 +67,7 @@ const Translation = () => {
               </li>
             </ul>
 
+            {/* Course Benefits */}
             <div className="bg-secondary/20 p-8 rounded-xl mb-8">
               <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Course Benefits</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -95,6 +98,33 @@ const Translation = () => {
               </ul>
             </div>
 
+            {/* SEO Rich Extra Sections */}
+            <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Why Learn Quran Translation Online?</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Understanding the Quran in your own language is the first step towards living its message. Online Quran Translation courses make this possible for students across the USA, UK, and worldwide. At <strong>Al-Hadi Quran Center</strong>, we ensure Shia students gain access to authentic translation lessons without geographical barriers.
+            </p>
+
+            <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Shia Perspective in Quran Translation</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Unlike general courses, our <strong>Shia Online Quran Translation Course</strong> highlights the teachings of <strong>Ahlul Bayt (ع)</strong>, ensuring that learners understand verses in their rightful context. This includes translations that emphasize the importance of Wilayah, justice, and the spiritual guidance of Imams.
+            </p>
+
+            <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Who Can Join the Translation Course?</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Our Quran Translation program is designed for <strong>kids, adults, and reverts</strong> who wish to connect with the Quran beyond mere recitation. Whether you’re a student in the USA or a professional in the UK, flexible timings allow you to study without interrupting your daily routine.
+            </p>
+
+            <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Quran Translation Course for Kids and Beginners</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Young learners benefit from simple explanations, vocabulary building, and stories of Prophets explained in an easy-to-understand way. Parents can rest assured that their children are receiving <strong>authentic Shia Quran education</strong> online.
+            </p>
+
+            <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Enroll in Al-Hadi Quran Center Today</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Learning the Quran is not just an academic pursuit—it’s a spiritual transformation. Start with our <strong>Shia Online Quran Translation Course</strong> and enrich your life with divine wisdom. Enroll today and take the first step toward a deeper connection with the Quran.
+            </p>
+
+            {/* CTA */}
             <div className="text-center">
               <Link to="/admission" className="btn-hero inline-block mb-4">
                 Start Free Trial

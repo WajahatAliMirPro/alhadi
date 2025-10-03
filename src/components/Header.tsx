@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "@/assets/logo.png"; // ✅ Adjust path if needed
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-2xl font-heading font-bold text-primary-foreground">AH</span>
+            <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
+              <img src={logo} alt="Al-Hadi Logo" className="w-full h-full object-cover" />
             </div>
             <div className="hidden sm:block">
               <h1 className="font-heading font-bold text-xl text-primary">Al-Hadi</h1>

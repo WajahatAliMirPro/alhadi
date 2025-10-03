@@ -1,16 +1,117 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import { Check } from "lucide-react";
+
+interface FeeCardProps {
+  title: string;
+  duration: string;
+  fees: { currency: string; value: string }[];
+}
+
+const FeeCard: React.FC<FeeCardProps> = ({ title, duration, fees }) => (
+  <div className="bg-card shadow-md rounded-xl p-6 flex flex-col justify-between text-center hover:shadow-lg transition-smooth">
+    <h4 className="font-heading font-bold text-xl text-primary mb-2">{title}</h4>
+    <p className="text-muted-foreground mb-4">{duration}</p>
+    <ul className="space-y-1 mb-4">
+      {fees.map((fee, idx) => (
+        <li key={idx} className="text-foreground">
+          {fee.currency}: <strong>{fee.value}</strong>
+        </li>
+      ))}
+    </ul>
+    <Link to="/admission" className="btn-primary inline-block">
+      Admission
+    </Link>
+  </div>
+);
 
 const Fee = () => {
-  const feeStructure = [
-    { course: "Noorani Qaida", fee: "$40", duration: "Per Month" },
-    { course: "Tajweed Course", fee: "$45", duration: "Per Month" },
-    { course: "Hifz Program", fee: "$60", duration: "Per Month" },
-    { course: "Quran Translation", fee: "$50", duration: "Per Month" },
-    { course: "Tafseer Course", fee: "$55", duration: "Per Month" },
-    { course: "Nahjul Balagha", fee: "$50", duration: "Per Month" },
+  const studentPackages = [
+    {
+      title: "1 Day/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$15" },
+        { currency: "AUD", value: "$25" },
+        { currency: "UK", value: "£15" },
+        { currency: "EURO", value: "€15" },
+      ],
+    },
+    {
+      title: "2 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$30" },
+        { currency: "AUD", value: "$40" },
+        { currency: "UK", value: "£25" },
+        { currency: "EURO", value: "€20" },
+      ],
+    },
+    {
+      title: "3 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$35" },
+        { currency: "AUD", value: "$55" },
+        { currency: "UK", value: "£20" },
+        { currency: "EURO", value: "€20" },
+      ],
+    },
+    {
+      title: "5 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$40" },
+        { currency: "AUD", value: "$70" },
+        { currency: "UK", value: "£25" },
+        { currency: "EURO", value: "€35" },
+      ],
+    },
+  ];
+
+  const familyPackages = [
+    {
+      title: "1 Day/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$30" },
+        { currency: "AUD", value: "$35" },
+        { currency: "UK", value: "£25" },
+        { currency: "EURO", value: "€25" },
+      ],
+    },
+    {
+      title: "2 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$35" },
+        { currency: "AUD", value: "$40" },
+        { currency: "UK", value: "£41" },
+        { currency: "EURO", value: "€30" },
+      ],
+    },
+    {
+      title: "3 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$40" },
+        { currency: "AUD", value: "$55" },
+        { currency: "UK", value: "£63" },
+        { currency: "EURO", value: "€35" },
+      ],
+    },
+    {
+      title: "5 Days/Week",
+      duration: "30 Min/Day",
+      fees: [
+        { currency: "USD", value: "$50" },
+        { currency: "AUD", value: "$70" },
+        { currency: "UK", value: "£55" },
+        { currency: "EURO", value: "€45" },
+      ],
+    },
   ];
 
   return (
@@ -20,123 +121,36 @@ const Fee = () => {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="gradient-primary py-20">
-          <div className="container-custom text-center">
-            <h1 className="font-heading font-bold text-5xl md:text-6xl text-primary-foreground mb-4">
-              Fee Structure
-            </h1>
-            <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Affordable and transparent pricing for quality Quranic education
-            </p>
-          </div>
+        <section className="gradient-primary py-20 text-center">
+          <h1 className="font-heading font-bold text-5xl md:text-6xl text-primary-foreground mb-4">
+            Fee / Hadiya Structure
+          </h1>
+          <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
+            Affordable and transparent packages for quality Quranic education.
+          </p>
         </section>
 
-        {/* Free Trial Banner */}
-        <section className="bg-accent/10 py-8">
-          <div className="container-custom text-center">
-            <div className="inline-flex items-center px-6 py-3 bg-accent rounded-full">
-              <Check className="h-6 w-6 mr-2 text-accent-foreground" />
-              <span className="font-bold text-lg text-accent-foreground">
-                Free Trial Class Available for All Courses!
-              </span>
-            </div>
-          </div>
-        </section>
-
-        {/* Fee Table Section */}
+        {/* Student Package */}
         <section className="container-custom py-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl shadow-medium overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="gradient-primary text-primary-foreground">
-                      <th className="px-6 py-4 text-left font-heading font-bold text-lg">Course Name</th>
-                      <th className="px-6 py-4 text-left font-heading font-bold text-lg">Monthly Fee</th>
-                      <th className="px-6 py-4 text-left font-heading font-bold text-lg">Duration</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    {feeStructure.map((item, index) => (
-                      <tr key={index} className="hover:bg-secondary/20 transition-smooth">
-                        <td className="px-6 py-4 font-semibold text-foreground">{item.course}</td>
-                        <td className="px-6 py-4 text-primary font-bold text-lg">{item.fee}</td>
-                        <td className="px-6 py-4 text-muted-foreground">{item.duration}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <h2 className="font-heading font-bold text-3xl mb-8 text-center text-primary">
+            🎓 Student Package
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {studentPackages.map((pkg, idx) => (
+              <FeeCard key={idx} {...pkg} />
+            ))}
+          </div>
+        </section>
 
-            {/* Additional Information */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 p-6 rounded-xl">
-                <h3 className="font-heading font-bold text-xl mb-4 text-primary">What's Included</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">One-on-one personalized classes</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Qualified and experienced tutors</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Flexible scheduling options</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Progress reports and assessments</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Study materials and resources</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-secondary/20 p-6 rounded-xl">
-                <h3 className="font-heading font-bold text-xl mb-4 text-primary">Payment Options</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Monthly payment plans</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Discounts for multiple students</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Secure online payment methods</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">No hidden charges</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">Flexible cancellation policy</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-lg text-muted-foreground mb-6">
-                Have questions about our pricing? Contact us for more information.
-              </p>
-              <a
-                href="https://wa.me/923700882006"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-block"
-              >
-                Contact Us on WhatsApp
-              </a>
-            </div>
+        {/* Family Package */}
+        <section className="container-custom py-16 bg-accent/10 rounded-xl">
+          <h2 className="font-heading font-bold text-3xl mb-8 text-center text-primary">
+            👨‍👩‍👧 Family Package (Special Offer)
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {familyPackages.map((pkg, idx) => (
+              <FeeCard key={idx} {...pkg} />
+            ))}
           </div>
         </section>
       </main>

@@ -61,21 +61,69 @@ const Home = () => {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="container-custom py-8">
+        <section className="container-custom py-5">
           <HeroCarousel />
         </section>
 
         {/* Welcome Section */}
         <section className="container-custom py-16">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-5xl mx-auto">
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-primary">
-              Welcome to Al-Hadi Quran Center
+              Unlock the Divine with Al-Hadi Quran Center
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Al-Hadi Quran Center is a leading online platform dedicated to providing comprehensive Quranic education to students worldwide. Our mission is to make authentic Islamic knowledge accessible to everyone, regardless of their location. With qualified Shia tutors, flexible scheduling, and personalized learning plans, we help students of all ages connect with the Holy Quran and deepen their understanding of Islam.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              Al-Hadi Quran Center is the leading Shia Online Quran Academy in the USA, offering expert Quran classes for kids and adults worldwide.
+              With flexible scheduling and dedicated Shia teachers, we make learning the Quran accessible and meaningful — from the comfort of your home.
+            </p>
+          </div>
+
+          {/* Section 1 */}
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground">
+            <h3 className="font-heading font-semibold text-2xl text-primary">
+              What is the Holy Quran?
+            </h3>
+            <p>
+              The Holy Quran is the central religious text of Islam, revealed to the Prophet Muhammad (PBUH) over 23 years.
+              It guides Muslims in faith, morality, and daily life. Beyond recitation, it requires deep reflection to uncover
+              its wisdom and apply its principles. Institutions like Al-Hadi Quran Center help learners understand its true
+              meaning with expert guidance.
+            </p>
+
+            {/* Section 2 */}
+            <h3 className="font-heading font-semibold text-2xl text-primary">
+              The Importance of Quran Education in the Shia Community
+            </h3>
+            <p>
+              Quranic education holds a central place in Shia Islam. The Shia tradition emphasizes learning the Quran through
+              the teachings of the Prophet Muhammad (PBUH) and the Imams from his family, especially Imam Ali (AS).
+              This holistic education nurtures both spirituality and moral integrity while helping believers face modern
+              challenges with Islamic principles. Al-Hadi Quran Center supports this mission by offering structured,
+              accessible, and high-quality online classes.
+            </p>
+
+            {/* Section 3 */}
+            <h3 className="font-heading font-semibold text-2xl text-primary">
+              Learn Quran Online in the USA with Al-Hadi
+            </h3>
+            <p>
+              Our Shia Online Quran Academy in the USA provides flexible courses for kids, adults, and beginners alike.
+              With qualified tutors skilled in Tajweed, Tafseer, Translation, and more, students enjoy personalized learning
+              plans, interactive sessions, and round-the-clock access. Whether you’re memorizing, reciting, or seeking
+              deeper insight, Al-Hadi makes Quran learning easy and impactful.
+            </p>
+
+            {/* Section 4 */}
+            <h3 className="font-heading font-semibold text-2xl text-primary">
+              How to Enroll in Al-Hadi Quran Center
+            </h3>
+            <p>
+              Joining is simple: visit our website, choose your course, and complete the online form. With flexible
+              payment options, progress tracking, and 24/7 support, starting your Quran journey has never been easier.
+              <span className="font-semibold text-primary"> Enroll now and embrace the path of Quranic knowledge!</span>
             </p>
           </div>
         </section>
+
 
         {/* Courses Section */}
         <section className="bg-secondary/30 py-16">
