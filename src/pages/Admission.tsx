@@ -190,7 +190,7 @@ const Admission = () => {
                 <p className="text-sm text-muted-foreground">
                   Have questions? Contact us on{" "}
                   <a
-                    href="https://wa.me/923700882006"
+                    href="https://api.whatsapp.com/send/?phone=923143592092&text=Aslamo+Alaikum%2C+I+have+a+query+about+Al-Hadi+Quran+Center"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary font-semibold hover:underline"
