@@ -19,7 +19,7 @@ const Admission = () => {
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append("access_key", "8f556dbd-c4fa-450c-b064-f2f4899252c3"); // your key
+      formDataToSend.append("access_key", "65a42537-7538-4431-a058-b896be0aea5a"); // your key
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);

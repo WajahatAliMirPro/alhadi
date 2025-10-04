@@ -28,9 +28,7 @@ const Footer = () => {
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">
-                <Newspaper className="h-5 w-5" />
-              </a>
+             
             </div>
           </div>
 
@@ -75,30 +73,30 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-bold text-2xl mb-4">Contact Info</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Pakistan:</p>
-                  <p className="text-primary-foreground/90">+92 370 0882006</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">USA:</p>
-                  <p className="text-primary-foreground/90">+1 (555) 123-4567</p>
-                </div>
-              </li>
+             <li className="flex items-start">
+  <Phone className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
+  <div>
+    <p className="font-semibold">Pakistan:</p>
+    <a
+      href="tel:+923143592092"
+      className="text-primary-foreground/90 hover:underline"
+    >
+      +92 314 3592092
+    </a>
+  </div>
+</li>
+
+              
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/90">info@alhadiquran.com</p>
-                  <p className="text-primary-foreground/90">support@alhadiquran.com</p>
+                 
+                  <p className="text-primary-foreground/90"><a href="mailto:alhadiqurancenter.com@gmail.com">alhadiqurancenter.com@gmail.com</a></p>
                 </div>
               </li>
               <li>
                 <a
-                  href="https://wa.me/923700882006"
+                  href="https://api.whatsapp.com/send/?phone=923143592092&text=Aslamo+Alaikum%2C+I+have+a+query+about+Al-Hadi+Quran+Center"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-smooth font-semibold"

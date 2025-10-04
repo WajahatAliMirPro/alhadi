@@ -1,7 +1,7 @@
 const WhatsAppFloat = () => {
   return (
     <a
-      href="https://wa.me/923700882006"
+      href="https://api.whatsapp.com/send/?phone=923143592092&text=Aslamo+Alaikum%2C+I+have+a+query+about+Al-Hadi+Quran+Center"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 left-6 z-50 bg-[#25D366] hover:bg-[#20BD5A] text-white p-4 rounded-full shadow-medium hover:shadow-soft transition-smooth hover:scale-110 group"
