@@ -40,8 +40,7 @@ const Qaida: React.FC = () => {
                 Shia Quran teachers
               </Link>
               , students learn Arabic alphabets, Tajweed, and correct recitation
-              step by step. Join from USA, UK, Canada, Australia & beyond with
-              flexible schedules and free trial access.
+              step by step. Join from the USA, UK, Canada, Australia, or anywhere worldwide with flexible schedules and free global access.
             </p>
 
             <h3 className="font-heading font-bold text-2xl mb-4 text-primary">
@@ -96,7 +95,7 @@ const Qaida: React.FC = () => {
                   "One-on-one live classes",
                   "Affordable with free trial",
                   "Progress tracking system",
-                  "Global access (USA, UK, Canada, Australia)",
+                  "Global access (Global access — serving students in the USA, UK, Canada, Australia, and worldwide)",
                   "Trusted by Shia families worldwide",
                 ].map((point, i) => (
                   <li key={i} className="flex items-start">

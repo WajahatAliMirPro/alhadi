@@ -72,7 +72,7 @@ const MaleTutor = () => {
                 {/* About */}
                 <h3 className="font-heading font-bold text-2xl mb-4 text-primary">About the Tutor</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Qari Muhammad Hassan is an experienced Shia Quran teacher specializing in Tajweed, Tafseer, Hifz, and Quran translation. With more than 15 years of online and offline teaching, he has trained hundreds of students across different countries including the USA, UK, Canada, and Pakistan. His deep knowledge of Shia Fiqh and love for Ahlul Bayt (ع) reflect in his teaching style, ensuring students not only learn to recite but also connect spiritually with the Quran.
+                  Qari Muhammad Hassan is an experienced Shia Quran teacher specializing in Tajweed, Tafseer, Hifz, and Quran translation. With more than 15 years of online and offline teaching, he has trained hundreds of students across different countries including the USA, UK, Canada, and Japan. His deep knowledge of Shia Fiqh and love for Ahlul Bayt (ع) reflect in his teaching style, ensuring students not only learn to recite but also connect spiritually with the Quran.
                 </p>
 
                 {/* Qualifications */}

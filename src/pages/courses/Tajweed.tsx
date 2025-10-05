@@ -34,7 +34,7 @@ const Tajweed = () => {
               At <strong>Al-Hadi Quran Center</strong>, a trusted <strong>Shia Online Quran Academy</strong>, 
               we offer a structured Tajweed course designed for both kids and adults. 
               Our expert tutors ensure that every student learns the proper articulation, pronunciation, and rhythm, 
-              making us one of the most reliable <strong>Online Quran Academies in the USA</strong>.
+              making us one of the most reliable <strong>Online Quran Academies worldwide</strong>.
             </p>
 
             {/* Course Overview */}

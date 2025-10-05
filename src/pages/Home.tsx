@@ -72,7 +72,7 @@ const Home = () => {
               Unlock the Divine with Al-Hadi Quran Center
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Al-Hadi Quran Center is the leading Shia Online Quran Academy in the USA, offering expert Quran classes for kids and adults worldwide.
+              Al-Hadi Quran Center is the leading Shia Online Quran Academy , offering expert Quran classes for kids and adults worldwide.
               With flexible scheduling and dedicated Shia teachers, we make learning the Quran accessible and meaningful — from the comfort of your home.
             </p>
           </div>
@@ -103,10 +103,10 @@ const Home = () => {
 
             {/* Section 3 */}
             <h3 className="font-heading font-semibold text-2xl text-primary">
-              Learn Quran Online in the USA with Al-Hadi
+              Learn Quran Online from anywhere with Al-Hadi Quran Center
             </h3>
             <p>
-              Our Shia Online Quran Academy in the USA provides flexible courses for kids, adults, and beginners alike.
+              Our Shia Online Quran Academy provides flexible courses for kids, adults, and beginners alike.
               With qualified tutors skilled in Tajweed, Tafseer, Translation, and more, students enjoy personalized learning
               plans, interactive sessions, and round-the-clock access. Whether you’re memorizing, reciting, or seeking
               deeper insight, Al-Hadi makes Quran learning easy and impactful.

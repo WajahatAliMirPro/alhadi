@@ -37,7 +37,7 @@ const About = () => {
               authentic Quran learning for kids and adults worldwide. With
               expert Shia scholars and certified Quran teachers, we aim to make
               Quranic education accessible in the{" "}
-              <strong>USA, UK, Canada, Australia, and beyond</strong>. Our
+              <strong>USA, UK, Canada, Australia, and worldwide</strong>. Our
               mission is to guide Muslims to recite the Holy Quran with proper
               Tajweed, understand its meanings, and apply the teachings of
               Ahlul-Bayt in their daily lives.

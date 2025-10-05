@@ -33,7 +33,7 @@ const Tafseer = () => {
               At <strong>Al-Hadi Quran Center</strong>, our <strong>Tafseer Quran Course Online</strong> is designed 
               for students worldwide who wish to understand the <strong>deeper meanings of the Quran</strong> 
               beyond basic translation. As a trusted <strong>Shia Quran Center</strong> and recognized 
-              <strong> Online Quran Academy in the USA</strong>, we provide structured lessons guided by 
+              <strong> Online Quran Academy</strong>, we provide structured lessons guided by 
               qualified Shia scholars with deep knowledge of Islamic traditions from the Ahlul Bayt (A.S).
             </p>
 

@@ -33,40 +33,40 @@ const Fee = () => {
       title: "1 Day/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$15" },
-        { currency: "AUD", value: "$25" },
-        { currency: "UK", value: "£15" },
-        { currency: "EURO", value: "€15" },
+        { currency: "USD", value: "$20" },
+        { currency: "AUD", value: "$30" },
+        { currency: "UK", value: "£20" },
+        { currency: "EURO", value: "€20" },
       ],
     },
     {
       title: "2 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$30" },
-        { currency: "AUD", value: "$40" },
-        { currency: "UK", value: "£25" },
-        { currency: "EURO", value: "€20" },
+        { currency: "USD", value: "$35" },
+        { currency: "AUD", value: "$45" },
+        { currency: "UK", value: "£30" },
+        { currency: "EURO", value: "€25" },
       ],
     },
     {
       title: "3 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$35" },
-        { currency: "AUD", value: "$55" },
-        { currency: "UK", value: "£20" },
-        { currency: "EURO", value: "€20" },
+        { currency: "USD", value: "$40" },
+        { currency: "AUD", value: "$60" },
+        { currency: "UK", value: "£25" },
+        { currency: "EURO", value: "€25" },
       ],
     },
     {
       title: "5 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$40" },
-        { currency: "AUD", value: "$70" },
-        { currency: "UK", value: "£25" },
-        { currency: "EURO", value: "€35" },
+        { currency: "USD", value: "$45" },
+        { currency: "AUD", value: "$75" },
+        { currency: "UK", value: "£30" },
+        { currency: "EURO", value: "€40" },
       ],
     },
   ];
@@ -76,40 +76,40 @@ const Fee = () => {
       title: "1 Day/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$30" },
-        { currency: "AUD", value: "$35" },
-        { currency: "UK", value: "£25" },
-        { currency: "EURO", value: "€25" },
+        { currency: "USD", value: "$35" },
+        { currency: "AUD", value: "$40" },
+        { currency: "UK", value: "£30" },
+        { currency: "EURO", value: "€30" },
       ],
     },
     {
       title: "2 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$35" },
-        { currency: "AUD", value: "$40" },
-        { currency: "UK", value: "£41" },
-        { currency: "EURO", value: "€30" },
+        { currency: "USD", value: "$40" },
+        { currency: "AUD", value: "$45" },
+        { currency: "UK", value: "£46" },
+        { currency: "EURO", value: "€35" },
       ],
     },
     {
       title: "3 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$40" },
-        { currency: "AUD", value: "$55" },
-        { currency: "UK", value: "£63" },
-        { currency: "EURO", value: "€35" },
+        { currency: "USD", value: "$45" },
+        { currency: "AUD", value: "$60" },
+        { currency: "UK", value: "£68" },
+        { currency: "EURO", value: "€40" },
       ],
     },
     {
       title: "5 Days/Week",
       duration: "30 Min/Day",
       fees: [
-        { currency: "USD", value: "$50" },
-        { currency: "AUD", value: "$70" },
-        { currency: "UK", value: "£55" },
-        { currency: "EURO", value: "€45" },
+        { currency: "USD", value: "$55" },
+        { currency: "AUD", value: "$75" },
+        { currency: "UK", value: "£60" },
+        { currency: "EURO", value: "€50" },
       ],
     },
   ];
@@ -130,10 +130,33 @@ const Fee = () => {
           </p>
         </section>
 
+        {/* Free Trial Policy */}
+        <section className="container-custom py-12 text-center bg-accent/10 rounded-xl my-10">
+          <h2 className="font-heading font-bold text-3xl text-primary mb-6">
+            Free Trial Policy
+          </h2>
+          <div className="max-w-3xl mx-auto text-muted-foreground leading-relaxed">
+            <p>Students registering for:</p>
+            <ul className="text-left mt-3 space-y-2 list-disc list-inside">
+              <li>
+                1-day/week, 2-day/week, or 3-day/week plans receive{" "}
+                <strong>1-day free trial</strong>.
+              </li>
+              <li>
+                4-day/week or 5-day/week plans receive{" "}
+                <strong>2-day free trial</strong>.
+              </li>
+            </ul>
+            <p className="mt-4">
+              This free trial allows students to experience our teaching quality and class environment before enrollment.
+            </p>
+          </div>
+        </section>
+
         {/* Student Package */}
         <section className="container-custom py-16">
           <h2 className="font-heading font-bold text-3xl mb-8 text-center text-primary">
-            🎓 Student Package
+            Student Package
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {studentPackages.map((pkg, idx) => (
@@ -145,8 +168,11 @@ const Fee = () => {
         {/* Family Package */}
         <section className="container-custom py-16 bg-accent/10 rounded-xl">
           <h2 className="font-heading font-bold text-3xl mb-8 text-center text-primary">
-            👨‍👩‍👧 Family Package (Special Offer)
+            Family Package (Special Offer)
           </h2>
+          <p className="text-center text-muted-foreground mb-8">
+            Avail additional discounts for second and third siblings.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {familyPackages.map((pkg, idx) => (
               <FeeCard key={idx} {...pkg} />

@@ -111,7 +111,7 @@ const Translation = () => {
 
             <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Who Can Join the Translation Course?</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Our Quran Translation program is designed for <strong>kids, adults, and reverts</strong> who wish to connect with the Quran beyond mere recitation. Whether you’re a student in the USA or a professional in the UK, flexible timings allow you to study without interrupting your daily routine.
+              Our Quran Translation program is designed for <strong>kids, adults, and reverts</strong> who wish to connect with the Quran beyond mere recitation. Whether you’re a student or a professional, flexible timings allow you to study without interrupting your daily routine.
             </p>
 
             <h3 className="font-heading font-bold text-2xl mb-4 text-primary">Quran Translation Course for Kids and Beginners</h3>
